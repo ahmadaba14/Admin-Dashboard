@@ -6,7 +6,6 @@ import {
   CCardBody,
   CCardHeader,
   CCol,
-  CNavLink,
   CRow,
   CTable,
   CTableBody,

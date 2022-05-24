@@ -14,7 +14,6 @@ import {
   CTableHead,
   CTableHeaderCell,
   CTableRow,
-  CNavLink,
   CSpinner,
 } from '@coreui/react'
 import CIcon from '@coreui/icons-react'

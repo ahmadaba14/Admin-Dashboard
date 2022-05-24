@@ -1,4 +1,4 @@
-import {CCard, CCardBody, CRow, CCol, CButton, CSpinner, CAlert, CCardImage } from "@coreui/react";
+import {CCard, CRow, CCol, CButton, CSpinner} from "@coreui/react";
 import React from "react";
 import moment from 'moment'
 import { useParams} from "react-router-dom";

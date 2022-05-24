@@ -2,7 +2,6 @@ import {CCard, CCardBody, CRow, CCol, CButton, CSpinner, CAlert, CCardImage } fr
 import React from "react";
 import { useParams} from "react-router-dom";
 import PostService from "src/services/postService";
-import UserService from "src/services/userService";
 
 const PostDetails = () => {
     const { id } = useParams();

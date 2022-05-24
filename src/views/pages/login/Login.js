@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import {
   CButton,
   CCard,
@@ -23,7 +22,6 @@ const Login = () => {
   const [password, setPassword] = React.useState('')
 
   const handleSubmit = async () => {
-    const user = {email, password}
     await UserService.login(email).then(res => {
       console.log(res.user)
     })
