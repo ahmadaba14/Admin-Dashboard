@@ -77,7 +77,7 @@ const Posts = () => {
                         <CAvatar size="md" src={item.picture} />
                       </CTableDataCell>
                       <CTableDataCell>
-                        <div>{item.name}</div>
+                        <div>{item.modelYear} {item.make} {item.model}</div>
                       </CTableDataCell>
                       <CTableDataCell>
                         <div>Rs. {item.rate} /day</div>

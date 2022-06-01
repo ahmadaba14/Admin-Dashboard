@@ -52,7 +52,7 @@ const PostDetails = () => {
             </CCardBody>
             <CRow>
                 <CCol>
-                    <div style={{fontSize: 20, fontFamily: 'fantasy', padding: 20}}>Name: {post.name}</div>
+                    <div style={{fontSize: 20, fontFamily: 'fantasy', padding: 20}}>Make: {post.make}</div>
                 </CCol>
                 <CCol>
                     <div style={{fontSize: 20, fontFamily: 'fantasy', padding: 20}}>Model: {post.model}</div>

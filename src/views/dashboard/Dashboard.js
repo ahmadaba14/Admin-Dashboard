@@ -111,7 +111,7 @@ const Dashboard = () => {
                         <CAvatar size="md" src={item.picture}/>
                       </CTableDataCell>
                       <CTableDataCell>
-                        <div>{item.name}</div>
+                        <div>{item.modelYear} {item.make} {item.model}</div>
                       </CTableDataCell>
                       <CTableDataCell className="text-center">
                         <div className="clearfix">
