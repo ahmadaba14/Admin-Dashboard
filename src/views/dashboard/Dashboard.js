@@ -156,7 +156,7 @@ const Dashboard = () => {
                   {users.map((item, index) => (
                     <CTableRow v-for="item in tableItems" key={index}>
                       <CTableDataCell className="text-center">
-                        <CAvatar size="md" src={item.profilePicture === '' ? item.profilePicture : avatar} />
+                        <CAvatar size="md" src={item.profilePicture !== '' ? item.profilePicture : avatar} />
                       </CTableDataCell>
                       <CTableDataCell>
                         <div>{item.name}</div>

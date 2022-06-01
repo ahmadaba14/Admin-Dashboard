@@ -38,6 +38,14 @@ const PostDetails = () => {
         }
     }
 
+    const handleNumberPlate = () => {
+        if (!post.numberPlate) {
+            setVisibility(true);
+        } else {
+            window.open(post.numberPlate, '_blank');
+        }
+    }
+
     const handleVerification = async () => {
         await PostService.update(id, { isPublic: true });
         console.log("Verified");
@@ -74,11 +82,22 @@ const PostDetails = () => {
                     <div style={{fontSize: 20, fontFamily: 'fantasy', padding: 20}}>Owner: {post.ownerName}</div>
                 </CCol>
             </CRow>
-            <div style={{fontSize: 20, fontFamily: 'fantasy', padding: 20}}>
-                <CButton color="primary" variant="ghost" style={{fontSize: 20, fontFamily: 'fantasy', padding: 10}} onClick={handleCarDocuments}>
-                    Check Car Documents
-                </CButton>
-            </div>
+            <CRow>
+                <CCol>
+                    <div style={{fontSize: 20, fontFamily: 'fantasy', padding: 20}}>
+                        <CButton color="primary" variant="ghost" style={{fontSize: 20, fontFamily: 'fantasy', padding: 10}} onClick={handleCarDocuments}>
+                            Check Car Number Plate
+                        </CButton>
+                    </div>
+                </CCol>
+                <CCol>
+                    <div style={{fontSize: 20, fontFamily: 'fantasy', padding: 20}}>
+                        <CButton color="primary" variant="ghost" style={{fontSize: 20, fontFamily: 'fantasy', padding: 10}} onClick={handleNumberPlate}>
+                            Check Car Documents
+                        </CButton>
+                    </div>
+                </CCol>
+            </CRow>
             <CRow>
                 <CCol>
                     <CButton color="success" variant="outline" style={{fontSize: 20, fontFamily: 'fantasy', padding: 10}} onClick={handleVerification}>
